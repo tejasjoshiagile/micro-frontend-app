@@ -1,0 +1,154 @@
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: radial-gradient(
+    circle at top right,
+    #d7ebff 0%,
+    #eef4ff 42%,
+    #f7f9ff 100%
+  );
+}
+
+.auth-page__container {
+  width: min(460px, 100%);
+}
+
+.auth-page__eyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4768aa;
+}
+
+.auth-page__title {
+  margin: 0.35rem 0 0;
+  font-size: 1.9rem;
+  color: #11244a;
+}
+
+.auth-page__subtitle {
+  margin: 0.45rem 0 1rem;
+  color: #4e6697;
+}
+
+.auth-card {
+  background: #fff;
+  border: 1px solid #dbe6fb;
+  box-shadow: 0 18px 35px rgba(39, 74, 126, 0.15);
+  border-radius: 18px;
+  padding: 1.2rem;
+}
+
+.auth-card__header {
+  margin-bottom: 1rem;
+}
+
+.auth-card__title {
+  margin: 0;
+  color: #1b2f57;
+}
+
+.auth-card__subtitle {
+  margin: 0.35rem 0 0;
+  color: #5c73a0;
+}
+
+.auth-card__body {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.auth-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.auth-form-field__label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c416d;
+}
+
+.auth-form-field__input {
+  width: 92%;
+  border: 1px solid #c8d8f5;
+  border-radius: 10px;
+  padding: 0.72rem 0.85rem;
+  font-size: 0.98rem;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.auth-form-field__input:focus {
+  border-color: #4d86ea;
+  box-shadow: 0 0 0 3px rgba(77, 134, 234, 0.2);
+}
+
+.auth-form-field__input.is-error {
+  border-color: #cf355d;
+}
+
+.auth-form-field__error {
+  margin: 0.35rem 0 0;
+  color: #b31f46;
+  font-size: 0.82rem;
+}
+
+.auth-primary-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.78rem 0.95rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #f8fbff;
+  background: linear-gradient(145deg, #2555ae 0%, #3276e4 100%);
+}
+
+.auth-primary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+}
+
+.auth-link-button {
+  border: 0;
+  background: transparent;
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #2458bc;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.auth-link-button:hover {
+  text-decoration: underline;
+}
+
+.auth-link-button.is-active {
+  color: #143573;
+  text-decoration: underline;
+}
+
+.auth-feedback {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.auth-feedback.success {
+  color: #1d7a4f;
+}
+
+.auth-navigation {
+  margin-top: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}

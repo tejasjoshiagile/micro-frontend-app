@@ -1,0 +1,134 @@
+.app-layout {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #f8fbff 0%, #eef4ff 100%);
+  color: #17223b;
+}
+
+.app-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.app-header-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(12, 28, 56, 0.88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-header-bar .app-shell {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.brand-logo {
+  height: 44px;
+  width: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0f2142;
+  background: linear-gradient(160deg, #7bc3ff 0%, #e1f4ff 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.brand-subtitle {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #b6caf0;
+}
+
+.brand-title {
+  margin: 0.1rem 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f7faff;
+}
+
+.brand-status {
+  margin: 0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #d8fbe4;
+  background: rgba(39, 179, 96, 0.24);
+  border: 1px solid rgba(123, 255, 177, 0.32);
+}
+
+.app-main-content {
+  padding: 2rem 0 6.5rem;
+}
+
+.content-panel {
+  min-height: calc(100vh - 170px);
+  border-radius: 16px;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #dce6fb;
+  box-shadow: 0 14px 30px rgba(20, 45, 84, 0.08);
+}
+
+.login-success {
+  display: grid;
+  place-content: center;
+  min-height: 180px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0d3f8a;
+  background: #eff6ff;
+  border-radius: 12px;
+  border: 1px solid #cadeff;
+}
+
+.app-footer-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 99;
+  border-top: 1px solid #d8e6ff;
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(8px);
+}
+
+.app-footer-content {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-text,
+.footer-copy {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #40608f;
+}
+
+@media (max-width: 720px) {
+  .app-header-bar .app-shell,
+  .app-footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.55rem 0;
+  }
+
+  .app-main-content {
+    padding-top: 1.25rem;
+  }
+}
